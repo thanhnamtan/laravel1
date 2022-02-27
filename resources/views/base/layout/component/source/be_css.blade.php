@@ -1,0 +1,1 @@
+@yield('be_css')
