@@ -24,6 +24,20 @@
 
     @yield('admin_top_css')
 
+    {{-- Using TinyMCE from the Tiny Cloud CDN with the Laravel framework --}}
+    {{-- https://www.tiny.cloud/docs/integrations/laravel/laravel-tiny-cloud/ --}}
+    {{-- php artisan make:component Head/tinymceConfig --}}
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: 'textarea#myeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
+        plugins: 'code table lists',
+        toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
+      });
+    </script>
+    {{-- php artisan make:component Forms/tinymceEditor --}}
+    {{-- <textarea id="myeditorinstance">Hello, World!</textarea> --}}
+
     @yield('admin_top_js')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

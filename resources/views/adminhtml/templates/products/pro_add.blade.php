@@ -34,8 +34,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="inputContent">Content</label>
-                                <textarea  height="320px" name="pro_content" class="form-control" id="inputContent" placeholder="product content" > </textarea>
+                                <label for="myeditorinstance">Content</label>
+                                <textarea  height="320px" name="pro_content" class="form-control" id="myeditorinstance" placeholder="product content" > </textarea>
                             </div>
 
                             <div class="form-group" style="display: flex">

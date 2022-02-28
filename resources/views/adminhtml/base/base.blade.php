@@ -24,6 +24,16 @@
 
     @yield('admin_top_css')
 
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+        selector: 'textarea#myeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
+        plugins: 'code table lists',
+        toolbar: 'undo redo | formatselect| bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
+      });
+    </script>
+   
+
     @yield('admin_top_js')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
