@@ -25,7 +25,7 @@ class categoryController extends Controller
         $cate_name = $request->get("category_name");
         $parent_id = $request->get("parent_id");
         $active = (int) $request->get("active");
-        $des = $request->get("description");
+        $des = $request->get("description") ?? "";
 
         $res = categoryModel::create(['name' => $cate_name, "active" => $active, "parent_id" => $parent_id,'description' => $des]);
 

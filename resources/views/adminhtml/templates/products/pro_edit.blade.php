@@ -23,29 +23,29 @@
                             <div class="form-row">
                                 <div class="form-group">
                                   <label for="inputProName4">product name</label>
-                                  <input type="text" name="pro_name" class="form-control" id="inputProName4" placeholder="name for product" required>
+                                  <input type="text" name="pro_name" value="<?= $product->name?>" class="form-control" id="inputProName4" placeholder="name for product" required>
                                 </div>
               
                                 <div class="form-group">
                                   <label for="inputTitle4">Title</label>
-                                  <input type="text" name="pro_title" class="form-control" id="inputTitle4" placeholder="Title" required>
+                                  <input type="text" name="pro_title" value="<?= $product->description ?>" class="form-control" id="inputTitle4" placeholder="Title" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="inputContent">Content</label>
-                                <textarea  height="320px" name="pro_content" class="form-control" id="inputContent" placeholder="product content" > </textarea>
+                                <textarea  height="320px" name="pro_content" class="form-control" id="inputContent" placeholder="product content" ><?= $product->content ?></textarea>
                             </div>
 
                             <div class="form-group" style="display: flex">
                                 <div class="col-sm-5">
                                     <label for="pro_price">Price</label>
-                                    <input type="number" min="0" class="form-control" required name="pro_price" id="pro_price">
+                                    <input type="number" min="0" value="<?= $product->price ?>" class="form-control" required name="pro_price" id="pro_price">
                                 </div>
 
                                 <div class="col-sm-5">
                                     <label for="pro_sale_off">Sale off</label>
-                                    <input type="number" min="0" class="form-control" name="pro_sale_off" id="pro_sale_off">
+                                    <input type="number" min="0" class="form-control" value="<?= $product->sale_off ?>" name="pro_sale_off" id="pro_sale_off">
                                 </div>
                             </div>
 
